@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.css">
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        .divElem {
+            display: flex;
+            flex-wrap: wrap;
+            /* background-color: aliceblue; */
+            color: black;
+
+        }
+
+        .mid {
+            margin-left: 5px;
+        }
+
+        .sortable-container {
+            height: 630px;
+            width: 200px;
+            /* border: 2px solid green; */
+            font-size: 10px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            padding: 6px;
+        }
+
+        .smdiv {
+            border: 2px solid green;
+            /* border-radius: 20%; */
+            -webkit-box-shadow: 8px 8px 24px -2px rgba(66, 68, 90, 1);
+            -moz-box-shadow: 8px 8px 24px -2px rgba(66, 68, 90, 1);
+            box-shadow: 8px 8px 24px -2px rgba(66, 68, 90, 1);
+            width: 100px;
+            height: 100px;
+            margin: 15px 0 0px 30px;
+            padding: 20px;
+            cursor: grab;
+            line-height: 1.1;
+        }
+
+        .toggle-image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divElem">
+        <div id="sortable1" class="sortable-container">
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <!-- <img src="./image/toogle bar.png" alt="toogle image" height="30" class="toggle-image" id="toggle1"> -->
+        </div>
+        <div id="sortable2" class="sortable-container">
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <!-- <img src="./image/toogle bar.png" alt="toogle image" height="30" class="toggle-image" id="toggle2"> -->
+        </div>
+        <div id="sortable3" class="sortable-container">
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <!-- <img src="./image/toogle bar.png" alt="toogle image" height="30" class="toggle-image" id="toggle3"> -->
+        </div>
+        <div id="sortable4" class="sortable-container">
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <!-- <img src="./image/toogle bar.png" alt="toogle image" height="30" class="toggle-image" id="toggle4"> -->
+        </div>
+        <div id="sortable5" class="sortable-container">
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <!-- <img src="./image/toogle bar.png" alt="toogle image" height="30" class="toggle-image" id="toggle5"> -->
+        </div>
+        <div id="sortable6" class="sortable-container">
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <div class="smdiv handle"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit fugiat
+                doloremque neque
+                pariatur placeat minus possimus laudantium quasi perferendis assumenda quod consequatur praesentium,
+            </div>
+            <div class="smdiv handle">blanditiis nihil id doloribus placeat quaerat excepturi consequuntur
+                voluptas ipsa cum!
+                Obcaecati ipsum ab numquam quos dolorum optio ducimus quibusdam molestias rem odit? Labore eos, .</div>
+            <!-- <img src="./image/toogle bar.png" alt="toogle image" height="30" class="toggle-image" id="toggle6"> -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script>
+        Sortable.create(sortable1, {
+            group: 'shared',
+            animation: 350
+        });
+        Sortable.create(sortable1, {
+            handle: '.handle',
+            animation: 350
+        });
+        Sortable.create(sortable2, {
+            group: 'shared',
+            animation: 350
+        });
+        Sortable.create(sortable2, {
+            handle: '.handle',
+            animation: 350
+        });
+        Sortable.create(sortable3, {
+            group: 'shared',
+            animation: 350
+        });
+        Sortable.create(sortable4, {
+            group: 'shared',
+            animation: 350
+        });
+        Sortable.create(sortable5, {
+            group: 'shared',
+            animation: 350
+        });
+        Sortable.create(sortable6, {
+            group: 'shared',
+            animation: 350
+        });
+
+
+        const TogetColor = function (event) {
+            const randomNumber = Math.floor(Math.random() * 16777215);
+            const randomcode = "#" + randomNumber.toString(16);
+            event.target.style.backgroundColor = randomcode;
+
+
+            // Generate another random color for text
+            const randomTextColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+            event.target.style.color = randomTextColor;
+
+        }
+
+        const smdivs = document.querySelectorAll('.smdiv');
+        smdivs.forEach(function (smdiv) {
+            smdiv.addEventListener('click', TogetColor);
+        });
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
